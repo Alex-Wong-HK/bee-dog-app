@@ -85,5 +85,23 @@
     "saveAnimalsDesc": "學習動物保護和福利知識",
     "completeLevels": "🎯 完成關卡",
     "completeLevelsDesc": "在日益挑戰的場景中取得進展"
+  },
+  "video": {
+    "title": "了解真相",
+    "description": "透過這個影片，了解動物保護的重要性和我們的使命。每個生命都值得被尊重和保護。",
+    "play": "播放影片",
+    "pause": "暫停",
+    "loading": "正在載入影片...",
+    "size": "影片大小: 18MB",
+    "dataWarning": "將消耗約 18MB 數據",
+    "error": "影片載入失敗",
+    "errorMessage": "請檢查您的網絡連接，或稍後再試。如果問題持續存在，請聯絡我們。",
+    "retry": "重試",
+    "share": "分享",
+    "shareTitle": "動物保護影片",
+    "shareText": "了解動物保護的重要性",
+    "linkCopied": "連結已複製到剪貼簿",
+    "notSupported": "您的瀏覽器不支援影片播放。",
+    "info": "此影片展示了動物保護工作的重要性。觀看時請確保您有足夠的數據流量。"
   }
 } 

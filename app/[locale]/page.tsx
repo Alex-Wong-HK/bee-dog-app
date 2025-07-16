@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import CopyButton from '@/components/CopyButton';
 import SocialLinks from '@/components/SocialLinks';
+import VideoSection from '@/components/VideoSection';
 
 const SOLANA_CONTRACT_ADDRESS = '5wyk5pXfKYFCT7vJWcbwjZMyakfK5xs2kRSQb6Gobonk';
 
@@ -93,6 +94,9 @@ export default function HomePage({ params }: { params: { locale: string } }) {
           </div>
         </div>
       </section>
+
+      {/* Video Section */}
+      <VideoSection />
 
       {/* Mission Section */}
       {/* <MissionSection /> */}

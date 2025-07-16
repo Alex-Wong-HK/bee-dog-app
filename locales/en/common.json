@@ -85,5 +85,23 @@
     "saveAnimalsDesc": "Learn about animal protection and welfare",
     "completeLevels": "🎯 Complete Levels",
     "completeLevelsDesc": "Progress through increasingly challenging scenarios"
+  },
+  "video": {
+    "title": "Discover the Truth",
+    "description": "Through this video, learn about the importance of animal protection and our mission. Every life deserves respect and protection.",
+    "play": "Play Video",
+    "pause": "Pause",
+    "loading": "Loading video...",
+    "size": "Video size: 18MB",
+    "dataWarning": "Will consume approximately 18MB of data",
+    "error": "Video loading failed",
+    "errorMessage": "Please check your internet connection or try again later. If the problem persists, please contact us.",
+    "retry": "Retry",
+    "share": "Share",
+    "shareTitle": "Animal Protection Video",
+    "shareText": "Learn about the importance of animal protection",
+    "linkCopied": "Link copied to clipboard",
+    "notSupported": "Your browser does not support video playback.",
+    "info": "This video demonstrates the importance of animal protection work. Please ensure you have sufficient data allowance when watching."
   }
 } 

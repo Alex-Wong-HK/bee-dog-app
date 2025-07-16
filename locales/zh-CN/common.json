@@ -85,5 +85,23 @@
     "saveAnimalsDesc": "学习动物保护和福利知识",
     "completeLevels": "🎯 完成关卡",
     "completeLevelsDesc": "在日益挑战的场景中取得进展"
+  },
+  "video": {
+    "title": "了解真相",
+    "description": "通过这个视频，了解动物保护的重要性和我们的使命。每个生命都值得被尊重和保护。",
+    "play": "播放视频",
+    "pause": "暂停",
+    "loading": "正在加载视频...",
+    "size": "视频大小: 18MB",
+    "dataWarning": "将消耗约 18MB 数据",
+    "error": "视频加载失败",
+    "errorMessage": "请检查您的网络连接，或稍后再试。如果问题持续存在，请联系我们。",
+    "retry": "重试",
+    "share": "分享",
+    "shareTitle": "动物保护视频",
+    "shareText": "了解动物保护的重要性",
+    "linkCopied": "链接已复制到剪贴板",
+    "notSupported": "您的浏览器不支持视频播放。",
+    "info": "此视频展示了动物保护工作的重要性。观看时请确保您有足够的数据流量。"
   }
 } 
