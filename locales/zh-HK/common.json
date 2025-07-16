@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "蜜蜂狗的真實故事：呼籲保護動物",
+    "description": "起初以為是網紅梗圖，實際卻是動物虐待的悲慘真相。讓我們一起保護無辜的生命，提高動物福利意識。"
+  },
+  "hero": {
+    "title": "蜜蜂狗的真實故事：",
+    "subtitle": "呼籲保護動物",
+    "description": "起初以為是網紅梗圖，實際卻是動物虐待的悲慘真相。這隻狗的腫臉不是被蜜蜂螫的，而是因為脖子上的繩子造成傷口感染。讓我們一起保護無辜的生命。",
+    "cta": "保護動物"
+  },
+  "story": {
+    "title": "從痛苦到倡導",
+    "content": "這張病毒式傳播圖片背後的真相令人心碎。這隻狗的腫脹外觀不是蜜蜂螫傷造成的，而是因為脖子上綁著的繩子造成嚴重傷害和感染。許多人看作是幽默表情包的，實際上是動物虐待和痛苦的證據。我們正在利用這個平台將認知轉化為行動——教育社區動物保護知識，預防虐待行為，強調以同情和尊重對待所有生命的重要性。"
+  },
+  "mission": {
+    "title": "我們的動物福利使命",
+    "content": "我們相信每個動物都應得到保護、關愛和同情。通過教育、社區參與和倡導，我們致力於預防動物虐待，促進負責任的寵物飼養。",
+    "prevention": "虐待預防",
+    "education": "社區教育",
+    "advocacy": "福利倡導"
+  },
+  "community": {
+    "title": "加入我們的動物保護社區",
+    "telegram": "加入使命",
+    "twitter": "關注倡導",
+    "contract": "複製合約",
+    "contractAddress": "合約地址"
+  },
+  "buttons": {
+    "joinTelegram": "加入電報群",
+    "joinTwitter": "關注推特",
+    "copyContract": "複製合約地址",
+    "copied": "已複製！",
+    "copyFailed": "複製失敗"
+  },
+  "accessibility": {
+    "beedog": "因虐待傷害導致面部腫脹的狗狗 - 呼籲動物保護和福利意識",
+    "telegram": "加入我們在電報上的動物福利倡導社區",
+    "twitter": "在推特上關注我們的動物保護倡導",
+    "contract": "複製Solana合約地址以支持動物福利倡議"
+  },
+  "nav": {
+    "home": "首頁",
+    "game": "拯救狗狗遊戲",
+    "imageAI": "蜜蜂叮咬圖像AI",
+    "language": "語言"
+  },
+  "game": {
+    "title": "拯救狗狗遊戲",
+    "description": "通過引人入勝的益智遊戲幫助拯救動物，提高對動物福利和保護的意識。",
+    "loading": "遊戲載入中...請稍等片刻"
+  },
+  "imageAI": {
+    "title": "蜜蜂叮咬效果AI",
+    "description": "教育工具，用於了解動物虐待的視覺效果。僅用於提高意識和倡導目的，請負責任地使用。",
+    "uploadTitle": "上傳您的圖片",
+    "uploadDropText": "將圖片拖放到此處或點擊瀏覽",
+    "uploadSupportsText": "支援：JPEG、PNG、WEBP（最大：10MB）",
+    "transformTitle": "應用效果",
+    "transformButton": "應用蜜蜂叮咬效果",
+    "processing": "處理中...",
+    "resultsTitle": "結果",
+    "originalImage": "原始圖片",
+    "processedImage": "應用效果後",
+    "downloadButton": "下載結果",
+    "errorTitle": "處理錯誤"
+  },
+  "stats": {
+    "neverForgotten": "永不遺忘",
+    "protectionFirst": "保護第一",
+    "compassionAlways": "永遠同情"
+  },
+  "footer": {
+    "organizationName": "動物保護倡導",
+    "organizationDescription": "將認知轉化為動物福利行動。每個聲音在對抗動物虐待的鬥爭中都很重要。",
+    "copyright": "為所有無辜生命而製作 ❤️"
+  },
+  "gameInstructions": {
+    "title": "🎮 遊戲說明",
+    "description": "通過解決謎題和做出正確選擇來幫助拯救狗狗！這款教育遊戲在提供引人入勝的遊戲體驗的同時促進動物福利意識。",
+    "solvePuzzles": "🧩 解決謎題",
+    "solvePuzzlesDesc": "運用邏輯和創造力克服挑戰",
+    "saveAnimals": "🐕 拯救動物", 
+    "saveAnimalsDesc": "學習動物保護和福利知識",
+    "completeLevels": "🎯 完成關卡",
+    "completeLevelsDesc": "在日益挑戰的場景中取得進展"
+  }
+} 

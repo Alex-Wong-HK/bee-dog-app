@@ -1,0 +1,37 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_VERSION = "9"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[template.environment]
+  HUGGING_FACE_API_KEY = "your_hugging_face_api_key_here"
+
+# 重定向规则支持i18n
+[[redirects]]
+  from = "/"
+  to = "/en"
+  status = 302
+
+[[redirects]]
+  from = "/*"
+  to = "/en/:splat"
+  status = 302
+  conditions = {Language = ["en"]}
+
+[[redirects]]
+  from = "/*"
+  to = "/zh-CN/:splat"
+  status = 302
+  conditions = {Language = ["zh"]}
+
+[[redirects]]
+  from = "/*"
+  to = "/ko-KR/:splat"
+  status = 302
+  conditions = {Language = ["ko"]} 

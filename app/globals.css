@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bee-primary: #f59e0b;
+  --bee-secondary: #d97706;
+  --crypto-blue: #0ea5e9;
+  --meme-pink: #ec4899;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-bee-500 to-bee-600 hover:from-bee-600 hover:to-bee-700 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply bg-gradient-to-r from-crypto-500 to-crypto-600 hover:from-crypto-600 hover:to-crypto-700 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-meme {
+    @apply bg-gradient-to-r from-meme-500 to-meme-600 hover:from-meme-600 hover:to-meme-700 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-bee-600 via-crypto-600 to-meme-600 bg-clip-text text-transparent;
+  }
+
+  .hero-bg {
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 25%, #f0f9ff 75%, #fdf2f8 100%);
+  }
+}
+
+/* Focus states for accessibility */
+.focus\:ring-custom:focus {
+  @apply outline-none ring-4 ring-bee-200 ring-opacity-50;
+}
+
+/* Smooth transitions for all interactive elements */
+button, a {
+  transition: all 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f59e0b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d97706;
+} 

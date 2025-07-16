@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "The Real Story Behind Bee Dog - Animal Protection Advocacy",
+    "description": "What appeared to be a viral meme reveals a tragic truth about animal abuse. Join us in protecting innocent lives and raising awareness about animal welfare."
+  },
+  "hero": {
+    "title": "The Real Story Behind Bee Dog:",
+    "subtitle": "A Call for Animal Protection",
+    "description": "What started as a meme reveals a tragic truth about animal abuse. The dog's swollen face wasn't from bee stings, but from rope injuries around its neck that became infected. Join us in protecting innocent lives.",
+    "cta": "Protect Animals"
+  },
+  "story": {
+    "title": "From Suffering to Advocacy",
+    "content": "The truth behind the viral image is heartbreaking. This dog's swollen appearance wasn't caused by bee stings, but by rope tied around its neck that caused severe injuries and infection. What many saw as a humorous meme was actually evidence of animal abuse and suffering. We're using this platform to transform awareness into action - educating communities about animal protection, abuse prevention, and the importance of treating all creatures with compassion and respect."
+  },
+  "mission": {
+    "title": "Our Animal Welfare Mission",
+    "content": "We believe every animal deserves protection, care, and compassion. Through education, community engagement, and advocacy, we work to prevent animal abuse and promote responsible pet ownership.",
+    "prevention": "Abuse Prevention",
+    "education": "Community Education",
+    "advocacy": "Welfare Advocacy"
+  },
+  "community": {
+    "title": "Join Our Animal Protection Community",
+    "telegram": "Join Our Mission",
+    "twitter": "Follow Our Advocacy",
+    "contract": "Copy Contract",
+    "contractAddress": "Contract Address"
+  },
+  "buttons": {
+    "joinTelegram": "Join Telegram",
+    "joinTwitter": "Follow on X",
+    "copyContract": "Copy Contract Address",
+    "copied": "Copied!",
+    "copyFailed": "Copy failed"
+  },
+  "accessibility": {
+    "beedog": "Dog with swollen face from abuse injuries - a call for animal protection and welfare awareness",
+    "telegram": "Join our animal welfare advocacy community on Telegram",
+    "twitter": "Follow our animal protection advocacy on X (formerly Twitter)",
+    "contract": "Copy Solana contract address to support animal welfare initiatives"
+  },
+  "nav": {
+    "home": "Home",
+    "game": "Save the Dog Game",
+    "imageAI": "Bee-Sting Image AI",
+    "language": "Language"
+  },
+  "game": {
+    "title": "Save the Dog Game",
+    "description": "Help save animals through engaging puzzle gameplay that promotes awareness about animal welfare and protection.",
+    "loading": "Game loading... Please wait a moment"
+  },
+  "imageAI": {
+    "title": "Bee-Sting Effect AI",
+    "description": "Educational tool to understand the visual effects of animal abuse. Use responsibly for awareness and advocacy purposes only.",
+    "uploadTitle": "Upload Your Image",
+    "uploadDropText": "Drop your image here or click to browse",
+    "uploadSupportsText": "Supports: JPEG, PNG, WEBP (Max: 10MB)",
+    "transformTitle": "Apply Effect",
+    "transformButton": "Apply Bee-Sting Effect",
+    "processing": "Processing...",
+    "resultsTitle": "Results",
+    "originalImage": "Original Image",
+    "processedImage": "With Effect Applied",
+    "downloadButton": "Download Result",
+    "errorTitle": "Processing Error"
+  },
+  "stats": {
+    "neverForgotten": "Never Forgotten",
+    "protectionFirst": "Protection First",
+    "compassionAlways": "Compassion Always"
+  },
+  "footer": {
+    "organizationName": "Animal Protection Advocacy",
+    "organizationDescription": "Transforming awareness into action for animal welfare. Every voice matters in the fight against animal abuse.",
+    "copyright": "Made with ❤️ for all innocent lives."
+  },
+  "gameInstructions": {
+    "title": "🎮 Game Instructions",
+    "description": "Help save the dog by solving puzzles and making the right choices! This educational game promotes animal welfare awareness while providing engaging gameplay.",
+    "solvePuzzles": "🧩 Solve Puzzles",
+    "solvePuzzlesDesc": "Use logic and creativity to overcome challenges",
+    "saveAnimals": "🐕 Save Animals", 
+    "saveAnimalsDesc": "Learn about animal protection and welfare",
+    "completeLevels": "🎯 Complete Levels",
+    "completeLevelsDesc": "Progress through increasingly challenging scenarios"
+  }
+} 

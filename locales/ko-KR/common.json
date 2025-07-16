@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "꿀벌강아지의 진실: 동물 보호를 위한 외침",
+    "description": "밈으로 시작된 이야기 뒤에 숨겨진 동물 학대의 비극적 진실. 무고한 생명을 보호하는 데 함께해 주세요."
+  },
+  "hero": {
+    "title": "꿀벌강아지의 진실:",
+    "subtitle": "동물 보호를 위한 외침",
+    "description": "밈으로 시작된 이야기 뒤에 숨겨진 동물 학대의 비극적 진실. 이 강아지의 부은 얼굴은 벌에 쏘인 것이 아니라, 목에 묶인 밧줄로 인한 상처가 감염된 것이었습니다. 무고한 생명을 보호하는 데 함께해 주세요.",
+    "cta": "동물 보호"
+  },
+  "story": {
+    "title": "고통에서 옹호로",
+    "content": "이 바이럴 이미지 뒤에 숨은 진실은 가슴 아픕니다. 이 강아지의 부은 모습은 벌에 쏘인 것이 아니라, 목에 묶인 밧줄로 인한 심각한 상처와 감염 때문이었습니다. 많은 사람이 유머러스한 밈으로 본 것은 실제로는 동물 학대와 고통의 증거였습니다. 우리는 이 플랫폼을 통해 인식을 행동으로 전환하고 있습니다 - 동물 보호, 학대 예방, 그리고 모든 생명체를 연민과 존경으로 대하는 것의 중요성에 대해 지역사회를 교육합니다."
+  },
+  "mission": {
+    "title": "우리의 동물 복지 사명",
+    "content": "우리는 모든 동물이 보호, 돌봄, 연민을 받을 자격이 있다고 믿습니다. 교육, 지역사회 참여, 옹호를 통해 동물 학대를 예방하고 책임감 있는 반려동물 돌봄을 촉진합니다.",
+    "prevention": "학대 예방",
+    "education": "지역사회 교육",
+    "advocacy": "복지 옹호"
+  },
+  "community": {
+    "title": "동물 보호 커뮤니티에 참여하세요",
+    "telegram": "사명 참여",
+    "twitter": "옹호 팔로우",
+    "contract": "계약 복사",
+    "contractAddress": "계약 주소"
+  },
+  "buttons": {
+    "joinTelegram": "텔레그램 참여",
+    "joinTwitter": "X 팔로우",
+    "copyContract": "계약 주소 복사",
+    "copied": "복사됨!",
+    "copyFailed": "복사 실패"
+  },
+  "accessibility": {
+    "beedog": "학대 상처로 얼굴이 부은 강아지 - 동물 보호와 복지 인식을 위한 호출",
+    "telegram": "텔레그램에서 우리의 동물 복지 옹호 커뮤니티에 참여하세요",
+    "twitter": "X(구 트위터)에서 우리의 동물 보호 옹호를 팔로우하세요",
+    "contract": "동물 복지 이니셔티브를 지원하기 위해 솔라나 계약 주소를 복사하세요"
+  },
+  "nav": {
+    "home": "홈",
+    "game": "강아지 구하기 게임",
+    "imageAI": "벌침 이미지 AI",
+    "language": "언어"
+  },
+  "game": {
+    "title": "강아지 구하기 게임",
+    "description": "동물 복지와 보호에 대한 인식을 높이는 흥미진진한 퍼즐 게임을 통해 동물을 구하는 데 도움을 주세요.",
+    "loading": "게임 로딩 중... 잠시만 기다려 주세요"
+  },
+  "imageAI": {
+    "title": "벌침 효과 AI",
+    "description": "동물 학대의 시각적 효과를 이해하기 위한 교육 도구입니다. 인식 제고와 옹호 목적으로만 책임감 있게 사용하세요.",
+    "uploadTitle": "이미지 업로드",
+    "uploadDropText": "이미지를 여기에 끌어다 놓거나 클릭하여 찾아보기",
+    "uploadSupportsText": "지원 형식: JPEG, PNG, WEBP (최대: 10MB)",
+    "transformTitle": "효과 적용",
+    "transformButton": "벌침 효과 적용",
+    "processing": "처리 중...",
+    "resultsTitle": "결과",
+    "originalImage": "원본 이미지",
+    "processedImage": "효과 적용 후",
+    "downloadButton": "결과 다운로드",
+    "errorTitle": "처리 오류"
+  },
+  "stats": {
+    "neverForgotten": "영원히 기억",
+    "protectionFirst": "보호 우선",
+    "compassionAlways": "항상 연민"
+  },
+  "footer": {
+    "organizationName": "동물 보호 옹호",
+    "organizationDescription": "동물 복지를 위한 인식을 행동으로 전환합니다. 동물 학대와의 싸움에서 모든 목소리가 중요합니다.",
+    "copyright": "모든 무고한 생명을 위해 ❤️로 제작"
+  },
+  "gameInstructions": {
+    "title": "🎮 게임 설명",
+    "description": "퍼즐을 풀고 올바른 선택을 하여 강아지를 구하는 데 도움을 주세요! 이 교육 게임은 흥미진진한 게임플레이를 제공하면서 동물 복지 인식을 증진합니다.",
+    "solvePuzzles": "🧩 퍼즐 해결",
+    "solvePuzzlesDesc": "논리와 창의력을 사용하여 도전을 극복하세요",
+    "saveAnimals": "🐕 동물 구하기", 
+    "saveAnimalsDesc": "동물 보호와 복지에 대해 배우세요",
+    "completeLevels": "🎯 레벨 완료",
+    "completeLevelsDesc": "점점 더 도전적인 시나리오를 통해 진행하세요"
+  }
+} 
