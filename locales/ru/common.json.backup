@@ -103,15 +103,5 @@
     "linkCopied": "Link copied to clipboard",
     "notSupported": "Your browser does not support video playback.",
     "info": "This video demonstrates the importance of animal protection work. Please ensure you have sufficient data allowance when watching."
-  },
-  "chart": {
-    "title": "Real-Time K-Line Chart",
-    "loading": "Chart loading...",
-    "errorTitle": "Chart Loading Failed",
-    "errorMessage": "Please check your network connection or try again later. If the problem persists, please contact us.",
-    "retry": "Retry",
-    "noData": "No data available",
-    "priceLabel": "Price",
-    "timeLabel": "Time"
   }
 } 

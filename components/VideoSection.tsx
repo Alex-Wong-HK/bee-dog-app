@@ -8,14 +8,13 @@ interface VideoSectionProps {
 }
 
 export default function VideoSection({ className = '' }: VideoSectionProps) {
-  const t = useTranslations();
+  const t = useTranslations('video');
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [showControls, setShowControls] = useState(false);
   const [loadProgress, setLoadProgress] = useState(0);
   const [hasError, setHasError] = useState(false);
-  const [userHasPlayedVideo, setUserHasPlayedVideo] = useState(false);
 
   // 监听视频加载进度
   useEffect(() => {
@@ -55,7 +54,6 @@ export default function VideoSection({ className = '' }: VideoSectionProps) {
     if (!videoRef.current) return;
     
     setIsLoading(true);
-    setUserHasPlayedVideo(true);
     
     try {
       await videoRef.current.play();
@@ -89,23 +87,21 @@ export default function VideoSection({ className = '' }: VideoSectionProps) {
         {/* 标题部分 */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-800 mb-6">
-            {t('video.title', { default: '了解真相' })}
+            {t('title')}
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            {t('video.description', { 
-              default: '通过这个视频，了解动物保护的重要性和我们的使命。每个生命都值得被尊重和保护。' 
-            })}
+            {t('description')}
           </p>
         </div>
 
-                 {/* 视频容器 - 适配竖屏视频 */}
-         <div className="relative max-w-2xl mx-auto">
-           <div className="relative aspect-[9/16] md:aspect-[3/4] bg-black rounded-2xl overflow-hidden shadow-2xl">
+        {/* 视频容器 - 适配竖屏视频 */}
+        <div className="relative max-w-2xl mx-auto">
+          <div className="relative aspect-[9/16] md:aspect-[3/4] bg-black rounded-2xl overflow-hidden shadow-2xl">
             {/* 视频元素 */}
-                         <video
-               ref={videoRef}
-               className="w-full h-full object-contain bg-black"
-                             poster="/bee-dog.jpg" // 使用现有图片作为视频预览图
+            <video
+              ref={videoRef}
+              className="w-full h-full object-contain bg-black"
+              poster="/bee-dog.jpg" // 使用现有图片作为视频预览图
               preload="metadata" // 只预加载元数据，节省带宽
               playsInline
               controls={showControls}
@@ -113,61 +109,41 @@ export default function VideoSection({ className = '' }: VideoSectionProps) {
               onPause={() => setIsPlaying(false)}
               onEnded={() => setIsPlaying(false)}
             >
-                             {/* 多格式支持，优化加载 */}
-               <source src="/beedog.mp4" type="video/mp4" />
-               <source src="/beedog.webm" type="video/webm" />
-              {t('video.notSupported', { default: '您的浏览器不支持视频播放。' })}
+              {/* 多格式支持，优化加载 */}
+              <source src="/beedog.mp4" type="video/mp4" />
+              <source src="/beedog.webm" type="video/webm" />
+              {t('notSupported')}
             </video>
 
             {/* 加载覆盖层 */}
-            {isLoading && (
+            {isLoading && !hasError && (
               <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center text-white">
-                <div className="w-16 h-16 border-4 border-white/30 border-t-white rounded-full animate-spin mb-4"></div>
+                <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-blue-400 mb-4"></div>
                 <p className="text-lg font-medium mb-2">
-                  {t('video.loading', { default: '正在加载视频...' })}
+                  {t('loading')}
                 </p>
-                {loadProgress > 0 && (
-                  <div className="w-48 h-2 bg-white/30 rounded-full overflow-hidden">
-                    <div 
-                      className="h-full bg-white transition-all duration-300"
-                      style={{ width: `${loadProgress}%` }}
-                    ></div>
-                  </div>
-                )}
+                <div className="w-48 bg-gray-600 rounded-full h-2 overflow-hidden">
+                  <div
+                    className="bg-blue-400 h-2 rounded-full transition-all duration-300 ease-out"
+                    style={{ width: `${loadProgress}%` }}
+                  />
+                </div>
                 <p className="text-sm text-white/80 mt-2">
-                  {t('video.size', { default: '视频大小: 18MB' })}
+                  {t('size')} • {t('dataWarning')}
                 </p>
               </div>
             )}
 
             {/* 播放按钮覆盖层 */}
-            {!userHasPlayedVideo && !isLoading && !hasError && (
+            {!showControls && !isLoading && !hasError && (
               <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
                 <button
                   onClick={handlePlayVideo}
-                  className="group relative"
-                  aria-label={t('video.play', { default: '播放视频' })}
+                  className="group bg-white/20 backdrop-blur-sm border border-white/30 rounded-full p-6 hover:bg-white/30 transition-all duration-300 transform hover:scale-110"
                 >
-                  {/* 播放按钮 */}
-                  <div className="w-20 h-20 md:w-24 md:h-24 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110 shadow-lg">
-                    <svg 
-                      className="w-8 h-8 md:w-10 md:h-10 text-gray-800 ml-1" 
-                      fill="currentColor" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M8 5v14l11-7z"/>
-                    </svg>
-                  </div>
-                  
-                  {/* 数据使用提醒 */}
-                  <div className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 bg-black/80 text-white px-4 py-2 rounded-lg text-sm whitespace-nowrap">
-                    <div className="flex items-center gap-2">
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                      </svg>
-                      <span>{t('video.dataWarning', { default: '将消耗约 18MB 数据' })}</span>
-                    </div>
-                  </div>
+                  <svg className="w-12 h-12 text-white group-hover:text-blue-100" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                  </svg>
                 </button>
               </div>
             )}
@@ -179,24 +155,21 @@ export default function VideoSection({ className = '' }: VideoSectionProps) {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
                 </svg>
                 <p className="text-lg font-medium mb-2">
-                  {t('video.error', { default: '视频加载失败' })}
+                  {t('error')}
                 </p>
                 <p className="text-sm text-white/80 text-center max-w-md">
-                  {t('video.errorMessage', { 
-                    default: '请检查您的网络连接，或稍后再试。如果问题持续存在，请联系我们。' 
-                  })}
+                  {t('errorMessage')}
                 </p>
                 <button
                   onClick={() => {
                     setHasError(false);
-                    setUserHasPlayedVideo(false);
                     if (videoRef.current) {
                       videoRef.current.load();
                     }
                   }}
                   className="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
                 >
-                  {t('video.retry', { default: '重试' })}
+                  {t('retry')}
                 </button>
               </div>
             )}
@@ -204,61 +177,58 @@ export default function VideoSection({ className = '' }: VideoSectionProps) {
 
           {/* 视频描述和操作 */}
           <div className="mt-8 text-center">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              {/* 播放控制按钮 */}
-              {userHasPlayedVideo && !hasError && (
+            {/* 播放/暂停按钮 */}
+            {showControls && (
+              <div className="flex justify-center gap-4 mb-6">
                 <button
                   onClick={toggleVideo}
                   className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
                 >
                   {isPlaying ? (
                     <>
-                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clipRule="evenodd" />
                       </svg>
-                      {t('video.pause', { default: '暂停' })}
+                      {t('pause')}
                     </>
                   ) : (
                     <>
-                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z"/>
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
                       </svg>
-                      {t('video.play', { default: '播放' })}
+                      {t('play')}
                     </>
                   )}
                 </button>
-              )}
 
-              {/* 分享按钮 */}
-              <button
-                onClick={() => {
-                  if (navigator.share) {
-                    navigator.share({
-                      title: t('video.shareTitle', { default: '动物保护视频' }),
-                      text: t('video.shareText', { default: '了解动物保护的重要性' }),
-                      url: window.location.href,
-                    });
-                  } else {
-                    // 回退到复制链接
-                    navigator.clipboard.writeText(window.location.href);
-                    alert(t('video.linkCopied', { default: '链接已复制到剪贴板' }));
-                  }
-                }}
-                className="flex items-center gap-2 px-6 py-3 border border-gray-300 hover:border-gray-400 text-gray-700 rounded-lg transition-colors"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
-                </svg>
-                {t('video.share', { default: '分享' })}
-              </button>
-            </div>
+                <button
+                  onClick={() => {
+                    if (navigator.share) {
+                      navigator.share({
+                        title: t('shareTitle'),
+                        text: t('shareText'),
+                        url: window.location.href,
+                      });
+                    } else {
+                      // 回退到复制链接
+                      navigator.clipboard.writeText(window.location.href);
+                      alert(t('linkCopied'));
+                    }
+                  }}
+                  className="flex items-center gap-2 px-6 py-3 border border-gray-300 hover:border-gray-400 text-gray-700 rounded-lg transition-colors"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
+                  </svg>
+                  {t('share')}
+                </button>
+              </div>
+            )}
 
             {/* 视频信息 */}
             <div className="mt-6 text-sm text-gray-600">
               <p>
-                {t('video.info', { 
-                  default: '此视频展示了动物保护工作的重要性。观看时请确保您有足够的数据流量。' 
-                })}
+                {t('info')}
               </p>
             </div>
           </div>

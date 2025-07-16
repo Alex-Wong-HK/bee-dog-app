@@ -8,6 +8,8 @@ const languages = [
   { code: 'zh-CN', name: '简体中文', flag: '🇨🇳' },
   { code: 'zh-HK', name: '繁體中文', flag: '🇭🇰' },
   { code: 'ko-KR', name: '한국어', flag: '🇰🇷' },
+  { code: 'ru', name: 'Русский', flag: '🇷🇺' },
+
 ];
 
 export default function LanguageSwitcher() {

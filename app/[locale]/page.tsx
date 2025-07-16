@@ -4,6 +4,7 @@ import { setRequestLocale } from 'next-intl/server';
 import CopyButton from '@/components/CopyButton';
 import SocialLinks from '@/components/SocialLinks';
 import VideoSection from '@/components/VideoSection';
+import TokenChart from '@/components/TokenChart';
 
 const SOLANA_CONTRACT_ADDRESS = '5wyk5pXfKYFCT7vJWcbwjZMyakfK5xs2kRSQb6Gobonk';
 
@@ -30,17 +31,38 @@ export default function HomePage({ params }: { params: { locale: string } }) {
               {t('hero.description')}
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-              {/* <button className="px-8 py-4 bg-gradient-to-r from-green-500 to-blue-500 text-white font-semibold rounded-xl hover:from-green-600 hover:to-blue-600 transition-all duration-300 shadow-lg text-lg">
-                {t('hero.cta')}
-              </button> */}
-              <CopyButton 
-                textToCopy={SOLANA_CONTRACT_ADDRESS}
-                className="text-lg px-8 py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:border-gray-400 transition-all duration-300"
-              >
-                {t('community.contract')}
-              </CopyButton>
+            {/* Contract Address Display */}
+            <div className="bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-2xl p-6 space-y-4">
+              <div className="flex items-center justify-center lg:justify-start gap-2">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span className="text-sm font-semibold text-blue-800 uppercase tracking-wide">
+                  {t('community.contractAddress')}
+                </span>
+              </div>
+              <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
+                <div className="flex items-center justify-between gap-4">
+                  <div className="flex-1 min-w-0">
+                    <code className="text-sm md:text-base font-mono text-gray-800 break-all">
+                      {SOLANA_CONTRACT_ADDRESS}
+                    </code>
+                  </div>
+                  <CopyButton 
+                    textToCopy={SOLANA_CONTRACT_ADDRESS}
+                    className="flex-shrink-0 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
+                  >
+                    {t('buttons.copyContract')}
+                  </CopyButton>
+                </div>
+              </div>
             </div>
+            
+            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+              <button className="px-8 py-4 bg-gradient-to-r from-green-500 to-blue-500 text-white font-semibold rounded-xl hover:from-green-600 hover:to-blue-600 transition-all duration-300 shadow-lg text-lg">
+                {t('hero.cta')}
+              </button>
+            </div> */}
           </div>
 
           {/* Hero Image */}
@@ -92,6 +114,21 @@ export default function HomePage({ params }: { params: { locale: string } }) {
               <div className="text-gray-600 font-medium">{t('stats.compassionAlways')}</div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Chart Section */}
+      <section className="py-20 px-4 bg-gradient-to-br from-blue-50 to-green-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-800 mb-4">
+              {t('chart.title')}
+            </h2>
+          </div>
+          <TokenChart 
+            contractAddress={SOLANA_CONTRACT_ADDRESS}
+            className="max-w-4xl mx-auto"
+          />
         </div>
       </section>
 

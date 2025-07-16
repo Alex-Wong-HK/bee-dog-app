@@ -103,5 +103,15 @@
     "linkCopied": "链接已复制到剪贴板",
     "notSupported": "您的浏览器不支持视频播放。",
     "info": "此视频展示了动物保护工作的重要性。观看时请确保您有足够的数据流量。"
+  },
+  "chart": {
+    "title": "實時K線圖",
+    "loading": "圖表加載中...",
+    "errorTitle": "圖表加載失敗",
+    "errorMessage": "請檢查您的網絡連接，或稍後再試。如果問題持續存在，請聯系我們。",
+    "retry": "重試",
+    "noData": "暫無數據",
+    "priceLabel": "價格",
+    "timeLabel": "時間"
   }
 } 
