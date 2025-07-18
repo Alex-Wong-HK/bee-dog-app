@@ -41,16 +41,17 @@ export default function HomePage({ params }: { params: { locale: string } }) {
                   {t('community.contractAddress')}
                 </span>
               </div>
-              <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-                <div className="flex items-center justify-between gap-4">
-                  <div className="flex-1 min-w-0">
-                    <code className="text-sm md:text-base font-mono text-gray-800 break-all">
-                      {SOLANA_CONTRACT_ADDRESS}
-                    </code>
-                  </div>
+              
+              <div className="space-y-3">
+                <div className="text-center lg:text-left">
+                  <code className="text-sm md:text-base font-mono text-gray-800 break-all">
+                    {SOLANA_CONTRACT_ADDRESS}
+                  </code>
+                </div>
+                <div className="flex justify-center lg:justify-start">
                   <CopyButton 
                     textToCopy={SOLANA_CONTRACT_ADDRESS}
-                    className="flex-shrink-0 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
+                    className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
                   >
                     {t('buttons.copyContract')}
                   </CopyButton>

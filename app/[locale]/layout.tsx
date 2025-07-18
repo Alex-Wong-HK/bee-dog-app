@@ -13,10 +13,11 @@ export function generateStaticParams() {
 
 export async function generateMetadata({params: {locale}}: {params: {locale: string}}) {
   const titles = {
-    'en': 'The Real Story Behind Bee Dog - Animal Protection Advocacy',
-    'zh-CN': '蜜蜂狗的真实故事：呼吁保护动物',
-    'ko-KR': '꿀벌강아지의 진실: 동물 보호를 위한 외침',
-    'ru': 'Nastoyashchaya istoriya sobaki-pchely - Zashchita zhivotnykh'
+    'en': '蜜蜂狗',
+    'zh-CN': '蜜蜂狗',
+    'zh-HK': '蜜蜂狗',
+    'ko-KR': '蜜蜂狗',
+    'ru': '蜜蜂狗'
   };
 
   const descriptions = {
@@ -139,7 +140,8 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
         />
 
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/bee-dog-icon.ico" />
+        <link rel="apple-touch-icon" href="/bee-dog-icon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#10b981" />
       </head>

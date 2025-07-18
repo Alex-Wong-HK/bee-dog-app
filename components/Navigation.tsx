@@ -37,8 +37,12 @@ export default function Navigation() {
             className="flex items-center space-x-2 font-display font-bold text-xl text-gray-800 hover:text-green-600 transition-colors duration-300"
             aria-label="Home"
           >
-            <span className="text-2xl">🐕</span>
-            <span className="hidden sm:inline">BeeDog</span>
+            <img 
+              src="/bee-dog-icon.png" 
+              alt="蜜蜂狗" 
+              className="w-8 h-8 rounded-md"
+            />
+            <span>BeeDog</span>
           </Link>
 
           {/* Desktop Navigation */}
