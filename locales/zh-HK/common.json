@@ -44,7 +44,8 @@
     "home": "首頁",
     "game": "拯救狗狗遊戲",
     "imageAI": "蜜蜂叮咬圖像AI",
-    "language": "語言"
+    "language": "語言",
+    "backToTop": "回到頂部"
   },
   "game": {
     "title": "拯救狗狗遊戲",
@@ -113,5 +114,17 @@
     "noData": "暫無數據",
     "priceLabel": "價格",
     "timeLabel": "時間"
+  },
+  "slider": {
+    "noImages": "暫無圖片顯示",
+    "previousImage": "上一張圖片",
+    "nextImage": "下一張圖片",
+    "goToSlide": "前往第 {number} 張圖片",
+    "notSupported": "您的瀏覽器不支援影片標籤。",
+    "loading": "載入圖片中...",
+    "imageError": "圖片載入失敗"
+  },
+  "communityCreations": {
+    "title": "社區創作"
   }
 } 

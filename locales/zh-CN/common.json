@@ -113,5 +113,17 @@
     "noData": "暫無數據",
     "priceLabel": "價格",
     "timeLabel": "時間"
+  },
+  "communityCreations": {
+    "title": "社區創作"
+  },
+  "slider": {
+    "noImages": "暫無圖片顯示",
+    "previousImage": "上一張圖片",
+    "nextImage": "下一張圖片",
+    "goToSlide": "前往第 {number} 張圖片",
+    "notSupported": "您的瀏覽器不支援影片標籤。",
+    "loading": "載入圖片中...",
+    "imageError": "圖片載入失敗"
   }
 } 

@@ -140,9 +140,25 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
         />
 
+        {/* PWA Meta Tags */}
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="application-name" content="蜜蜂狗" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="蜜蜂狗" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="msapplication-config" content="/browserconfig.xml" />
+        <meta name="msapplication-TileColor" content="#10b981" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        
         <link rel="icon" href="/bee-dog-icon.ico" />
         <link rel="apple-touch-icon" href="/bee-dog-icon.png" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/bee-dog-icon.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/bee-dog-icon.png" />
+        <link rel="apple-touch-icon" sizes="167x167" href="/bee-dog-icon.png" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=yes" />
         <meta name="theme-color" content="#10b981" />
       </head>
       <body className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-gray-50">

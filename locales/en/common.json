@@ -44,7 +44,8 @@
     "home": "Home",
     "game": "Save the Dog Game",
     "imageAI": "Bee-Sting Image AI",
-    "language": "Language"
+    "language": "Language",
+    "backToTop": "Back to Top"
   },
   "game": {
     "title": "Save the Dog Game",
@@ -113,5 +114,17 @@
     "noData": "No data available",
     "priceLabel": "Price",
     "timeLabel": "Time"
+  },
+  "slider": {
+    "noImages": "No images to display",
+    "previousImage": "Previous image",
+    "nextImage": "Next image",
+    "goToSlide": "Go to slide {number}",
+    "notSupported": "Your browser does not support the video tag.",
+    "loading": "Loading image...",
+    "imageError": "Failed to load image"
+  },
+  "communityCreations": {
+    "title": "Community Creations"
   }
 } 

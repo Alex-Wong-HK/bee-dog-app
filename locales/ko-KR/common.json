@@ -113,5 +113,17 @@
     "noData": "데이터 없음",
     "priceLabel": "가격",
     "timeLabel": "시간"
+  },
+  "communityCreations": {
+    "title": "커뮤니티 창작"
+  },
+  "slider": {
+    "noImages": "표시할 이미지가 없습니다",
+    "previousImage": "이전 이미지",
+    "nextImage": "다음 이미지",
+    "goToSlide": "슬라이드 {number}로 이동",
+    "notSupported": "브라우저에서 비디오 태그를 지원하지 않습니다.",
+    "loading": "이미지 로딩 중...",
+    "imageError": "이미지 로딩 실패"
   }
 } 

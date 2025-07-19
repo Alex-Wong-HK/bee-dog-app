@@ -17,11 +17,60 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
   overflow-x: hidden;
+}
+
+/* Section scroll snapping */
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+/* Very light scroll indicator */
+body.scroll-indicator {
+  scroll-behavior: smooth;
+}
+
+/* Light scrollbar indicator */
+body.scroll-indicator::-webkit-scrollbar {
+  width: 8px;
+}
+
+body.scroll-indicator::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+body.scroll-indicator::-webkit-scrollbar-thumb {
+  background: #fbbf24;
+  border-radius: 4px;
+  opacity: 0.8;
+  transition: all 0.2s ease;
+}
+
+body.scroll-indicator::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
+
+/* Very subtle animation for scroll indicator */
+body.scroll-indicator {
+  animation: lightScrollPulse 0.3s ease-out;
+}
+
+@keyframes lightScrollPulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @layer components {
@@ -54,6 +103,37 @@ body {
 /* Smooth transitions for all interactive elements */
 button, a {
   transition: all 0.3s ease;
+}
+
+/* Section transition animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.section-animate {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.section-animate-scale {
+  animation: fadeInScale 0.6s ease-out;
 }
 
 /* Custom scrollbar */
