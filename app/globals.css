@@ -20,6 +20,18 @@ html {
   scroll-snap-type: y mandatory;
 }
 
+/* Disable scroll snapping on mobile devices */
+@media (max-width: 767px) {
+  html {
+    scroll-snap-type: none;
+  }
+  
+  section {
+    scroll-snap-align: none;
+    scroll-snap-stop: normal;
+  }
+}
+
 body {
   font-family: 'Inter', system-ui, sans-serif;
   overflow-x: hidden;

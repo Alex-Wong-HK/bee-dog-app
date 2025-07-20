@@ -19,8 +19,8 @@ export default function HomePage({ params }: { params: { locale: string } }) {
     <main className="min-h-screen">
       <ScrollSnap sections={['hero', 'community-creations', 'story']} />
       {/* Hero Section */}
-      <section id="hero" className="hero-bg min-h-screen flex flex-col items-center justify-center px-4 py-12">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center mb-12">
+      <section id="hero" className="hero-bg min-h-screen md:min-h-screen flex flex-col items-center justify-center px-4 py-8 md:py-12" style={{ minHeight: '120vh' }}>
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center mb-8 md:mb-12">
           {/* Hero Content */}
           <div className="text-center lg:text-left space-y-6">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-tight">
@@ -70,7 +70,7 @@ export default function HomePage({ params }: { params: { locale: string } }) {
           {/* Hero Video */}
           <HeroVideo />
         </div>
-        <div className="flex justify-center pt-4">
+        <div className="flex justify-center pt-8 md:pt-4">
               <HowToBuyButton />
         </div>
       </section>
