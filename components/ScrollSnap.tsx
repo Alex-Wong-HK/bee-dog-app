@@ -9,31 +9,26 @@ interface ScrollSnapProps {
 
 export default function ScrollSnap({ sections, snapThreshold = 0.6 }: ScrollSnapProps) {
   useEffect(() => {
-    // Check if device is mobile
     const checkMobile = () => {
       return window.innerWidth < 768; // md breakpoint
     };
 
-    // Initial check - if mobile, don't set up scroll snapping
     if (checkMobile()) {
-      return () => {}; // No cleanup needed for mobile
+      return () => {}; 
     }
 
     let isScrolling = false;
     let scrollTimeout: NodeJS.Timeout;
 
     const handleScroll = () => {
-      // If this is the start of scrolling, add subtle feedback
       if (!isScrolling) {
         isScrolling = true;
         
-        // Add subtle scroll indicator
         document.body.classList.add('scroll-indicator');
       }
       
       clearTimeout(scrollTimeout);
       
-      // After a very short delay, gently guide to the correct position
       scrollTimeout = setTimeout(() => {
         isScrolling = false;
         
