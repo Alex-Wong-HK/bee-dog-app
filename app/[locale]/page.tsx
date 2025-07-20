@@ -4,6 +4,8 @@ import CopyButton from '@/components/CopyButton';
 import SocialLinks from '@/components/SocialLinks';
 import ImageSlider from '@/components/ImageSlider';
 import ScrollSnap from '@/components/ScrollSnap';
+import HowToBuyButton from '@/components/HowToBuyButton';
+import HeroVideo from '@/components/HeroVideo';
 
 const SOLANA_CONTRACT_ADDRESS = '5wyk5pXfKYFCT7vJWcbwjZMyakfK5xs2kRSQb6Gobonk';
 
@@ -17,8 +19,8 @@ export default function HomePage({ params }: { params: { locale: string } }) {
     <main className="min-h-screen">
       <ScrollSnap sections={['hero', 'community-creations', 'story']} />
       {/* Hero Section */}
-      <section id="hero" className="hero-bg min-h-screen flex items-center justify-center px-4 py-12">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+      <section id="hero" className="hero-bg min-h-screen flex flex-col items-center justify-center px-4 py-12">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center mb-12">
           {/* Hero Content */}
           <div className="text-center lg:text-left space-y-6">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-tight">
@@ -58,43 +60,18 @@ export default function HomePage({ params }: { params: { locale: string } }) {
                 </div>
               </div>
             </div>
+
+            {/* How to Buy Button */}
+
             
 
           </div>
 
           {/* Hero Video */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative w-80 md:w-96 lg:w-[500px] rounded-3xl overflow-hidden shadow-2xl group">
-              {/* Video with custom styling */}
-              <video
-                className="w-full h-auto object-cover focus:outline-none"
-                controls
-                poster="/bee-dog.webp"
-                preload="metadata"
-              >
-                <source src="/beedog.mp4" type="video/mp4" />
-                <source src="/beedog.webm" type="video/webm" />
-                Your browser does not support the video tag.
-              </video>
-              
-              {/* Custom play button overlay - hides on hover and when video is interacted with */}
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none transition-all duration-300 opacity-100 group-hover:opacity-0 group-focus-within:opacity-0">
-                <div className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-full p-6 shadow-2xl">
-                  <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-                  </svg>
-                </div>
-              </div>
-
-              {/* Video title overlay - hides on hover and when video is interacted with */}
-              <div className="absolute bottom-4 left-4 right-4 text-white pointer-events-none transition-all duration-300 opacity-100 group-hover:opacity-0 group-focus-within:opacity-0">
-                <div className="bg-black/60 backdrop-blur-sm rounded-lg p-3">
-                  <p className="font-semibold text-lg mb-1">Watch Our Story</p>
-                  <p className="text-sm opacity-90">Our mission in action</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <HeroVideo />
+        </div>
+        <div className="flex justify-center pt-4">
+              <HowToBuyButton />
         </div>
       </section>
 

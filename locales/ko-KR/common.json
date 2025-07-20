@@ -32,7 +32,8 @@
     "joinTwitter": "X 팔로우",
     "copyContract": "계약 주소 복사",
     "copied": "복사됨!",
-    "copyFailed": "복사 실패"
+    "copyFailed": "복사 실패",
+    "howToBuy": "구매 방법"
   },
   "accessibility": {
     "beedog": "학대 상처로 얼굴이 부은 강아지 - 동물 보호와 복지 인식을 위한 호출",
@@ -125,5 +126,28 @@
     "notSupported": "브라우저에서 비디오 태그를 지원하지 않습니다.",
     "loading": "이미지 로딩 중...",
     "imageError": "이미지 로딩 실패"
+  },
+  "howToBuy": {
+    "title": "$蜜蜂狗 구매 방법",
+    "step": "단계",
+    "of": "/",
+    "close": "닫기",
+    "back": "이전",
+    "next": "다음",
+    "finish": "완료",
+    "step1": {
+      "title": "지갑 생성",
+      "description": "모바일에서 Phantom 앱을 다운로드하거나 Chrome 확장 프로그램을 설치하여 Solana 지갑을 생성하세요.",
+      "linkText": "Phantom 다운로드"
+    },
+    "step2": {
+      "title": "SOL 획득",
+      "description": "DEX에서 SOL을 구매하거나 MoonPay를 통해 구매한 후 지갑 주소로 충전하세요."
+    },
+    "step3": {
+      "title": "$蜜蜂狗 구매",
+      "description": "SOL을 사용하여 탈중앙화 거래소를 통해 $蜜蜂狗 토큰을 구매하세요.",
+      "linkText": "$蜜蜂狗 구매"
+    }
   }
 } 

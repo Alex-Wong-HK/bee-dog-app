@@ -32,7 +32,8 @@
     "joinTwitter": "關注推特",
     "copyContract": "複製合約地址",
     "copied": "已複製！",
-    "copyFailed": "複製失敗"
+    "copyFailed": "複製失敗",
+    "howToBuy": "如何購買"
   },
   "accessibility": {
     "beedog": "因虐待傷害導致面部腫脹的狗狗 - 呼籲動物保護和福利意識",
@@ -126,5 +127,28 @@
   },
   "communityCreations": {
     "title": "社區創作"
+  },
+  "howToBuy": {
+    "title": "如何購買 $蜜蜂狗",
+    "step": "步驟",
+    "of": "共",
+    "close": "關閉",
+    "back": "上一步",
+    "next": "下一步",
+    "finish": "完成",
+    "step1": {
+      "title": "創建錢包",
+      "description": "在手機上下載 Phantom 應用或安裝 Chrome 擴展程式來創建您的 Solana 錢包。",
+      "linkText": "下載 Phantom"
+    },
+    "step2": {
+      "title": "獲取 SOL",
+      "description": "在 DEX 或通過 MoonPay 購買 SOL，然後充值到您的錢包地址。"
+    },
+    "step3": {
+      "title": "購買 $蜜蜂狗",
+      "description": "使用您的 SOL 通過去中心化交易所購買 $蜜蜂狗 代幣。",
+      "linkText": "購買 $蜜蜂狗"
+    }
   }
 } 

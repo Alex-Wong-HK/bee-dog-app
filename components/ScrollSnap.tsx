@@ -7,7 +7,7 @@ interface ScrollSnapProps {
   snapThreshold?: number;
 }
 
-export default function ScrollSnap({ sections, snapThreshold = 0.3 }: ScrollSnapProps) {
+export default function ScrollSnap({ sections, snapThreshold = 0.6 }: ScrollSnapProps) {
   useEffect(() => {
     let isScrolling = false;
     let scrollTimeout: NodeJS.Timeout;
@@ -52,7 +52,7 @@ export default function ScrollSnap({ sections, snapThreshold = 0.3 }: ScrollSnap
           const targetElement = document.getElementById(targetSection);
           if (targetElement) {
             const targetRect = targetElement.getBoundingClientRect();
-            const isNearTarget = Math.abs(targetRect.top) < windowHeight * 0.4;
+            const isNearTarget = Math.abs(targetRect.top) < windowHeight * 0.6;
             
             if (!isNearTarget) {
               targetElement.scrollIntoView({
@@ -61,7 +61,7 @@ export default function ScrollSnap({ sections, snapThreshold = 0.3 }: ScrollSnap
               });
             }
           }
-        }, 200); // Very short delay for light feel
+        }, 400); // Longer delay for less aggressive snapping
     };
 
     // Throttled scroll handler

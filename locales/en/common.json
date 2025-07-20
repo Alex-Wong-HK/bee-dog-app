@@ -32,7 +32,8 @@
     "joinTwitter": "Follow on X",
     "copyContract": "Copy Contract Address",
     "copied": "Copied!",
-    "copyFailed": "Copy failed"
+    "copyFailed": "Copy failed",
+    "howToBuy": "How to Buy"
   },
   "accessibility": {
     "beedog": "Dog with swollen face from abuse injuries - a call for animal protection and welfare awareness",
@@ -126,5 +127,28 @@
   },
   "communityCreations": {
     "title": "Community Creations"
+  },
+  "howToBuy": {
+    "title": "How to Buy $蜜蜂狗",
+    "step": "Step",
+    "of": "of",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "finish": "Finish",
+    "step1": {
+      "title": "Create Wallet",
+      "description": "Download the Phantom app on mobile or install the Chrome extension to create your Solana wallet.",
+      "linkText": "Download Phantom"
+    },
+    "step2": {
+      "title": "Get SOL",
+      "description": "Buy SOL on DEX or through MoonPay, then top up to your wallet address."
+    },
+    "step3": {
+      "title": "Buy $蜜蜂狗",
+      "description": "Use your SOL to purchase $蜜蜂狗 tokens through a decentralized exchange.",
+      "linkText": "Buy $蜜蜂狗"
+    }
   }
 } 

@@ -32,7 +32,8 @@
     "joinTwitter": "Podpisat'sya na X",
     "copyContract": "Kopirovat' adres kontrakta",
     "copied": "Skopirovano!",
-    "copyFailed": "Oshibka kopirovaniya"
+    "copyFailed": "Oshibka kopirovaniya",
+    "howToBuy": "Как купить"
   },
   "accessibility": {
     "beedog": "Sobaka s opukshim litsom ot travm zhestokogo obrashcheniya - prizyv k zashchite zhivotnykh i osvedomlennosti o blagopoluchii",
@@ -125,5 +126,28 @@
     "notSupported": "Ваш браузер не поддерживает тег видео.",
     "loading": "Загрузка изображения...",
     "imageError": "Ошибка загрузки изображения"
+  },
+  "howToBuy": {
+    "title": "Как купить $蜜蜂狗",
+    "step": "Шаг",
+    "of": "из",
+    "close": "Закрыть",
+    "back": "Назад",
+    "next": "Далее",
+    "finish": "Завершить",
+    "step1": {
+      "title": "Создать кошелек",
+      "description": "Скачайте приложение Phantom на мобильный или установите расширение Chrome для создания кошелька Solana.",
+      "linkText": "Скачать Phantom"
+    },
+    "step2": {
+      "title": "Получить SOL",
+      "description": "Купите SOL на DEX или через MoonPay, затем пополните ваш адрес кошелька."
+    },
+    "step3": {
+      "title": "Купить $蜜蜂狗",
+      "description": "Используйте ваш SOL для покупки токенов $蜜蜂狗 через децентрализованную биржу.",
+      "linkText": "Купить $蜜蜂狗"
+    }
   }
 } 
